@@ -18,6 +18,11 @@ header{
 }
 header a{
     color: var(--secondary-color);
+    height: 100%;
+}
+nav div a:hover{
+    color: var(--primary-color);
+    background-color:var(--secondary-color);
 }
 footer{
     height: 25%;
@@ -39,6 +44,9 @@ h1{
     height: 93vh;
     font-size: 1.3em;
     line-height: 1.5;
+}
+#showcase p{
+    color: var(--primary-color);
 }
 #showcase::after{
     z-index: 1;
@@ -105,16 +113,19 @@ color: var(--secondary-color);
 .pregunta{
     color:var(--primary-color);
     background-color: var(--secondary-color);
+    
 }
 .respuesta{
-    font-size: 15px;
+    font-size: 25px;
     color:var(--secondary-color);
+    
 }
 .faq{
     display: block;
     height: 10em;
 }
 p{
+    width: 100%;
     text-align: center;
 }
 .qui{
@@ -123,4 +134,16 @@ width: 100%;
 height: 100%;
 align-items: center;
 flex-direction:column;
+}
+.boton:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 9px;
+    text-decoration: none;
+}
+.boton-green:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 9px;
+    text-decoration: none; 
 }
