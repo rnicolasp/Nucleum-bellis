@@ -28,16 +28,6 @@ footer{
 h1{
     color: var(--secondary-color);
 }
-#seleccion{
-    background-color: var(--secondary-color);
-}
-#seleccion a{
-    color: var(--primary-color);
-}
-#seleccion a:hover{
-    color:var(--secondary-color);
-}
-
 #showcase{
     display: flex;
     background-size: cover;
@@ -67,7 +57,26 @@ h1, p, a, div{
 .dropdown-item{
     color: var(--secondary-color);
 }
+.dropdown-item:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
 li{
     margin-left: 15px;
     margin-right: 15px;
+}
+section{
+    display: flex;
+    height: 5em;
+}
+div{
+    padding: 15px;
+}
+section{
+    background-color: var(--primary-color);
+    width: 100%;
+    border-top: 5px solid var(--terciary-color);
+}
+section p{
+color: var(--secondary-color);
 }
