@@ -80,3 +80,40 @@ section{
 section p{
 color: var(--secondary-color);
 }
+.green{
+    background-color: var(--secondary-color);
+}
+.green p{
+    color: var(--primary-color);
+}
+.divider{
+    position: relative;
+    margin: 20px;
+    height: 1px;
+}
+
+.div-transparent:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+.pregunta{
+    color:var(--primary-color);
+    background-color: var(--secondary-color);
+}
+.respuesta{
+    font-size: 15px;
+    color:var(--secondary-color);
+}
+.faq{
+    display: block;
+    height: 10em;
+}
+p{
+    text-align: center;
+}
