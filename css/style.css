@@ -43,10 +43,30 @@ footer{
     font-size: 1.3em;
     line-height: 1.5;
 }
+#showcase-mutant{
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/Mutant/Arte.jpg");
+    background-position: center;
+    height: 93vh;
+    font-size: 1.3em;
+    line-height: 1.5;
+}
 #showcase p{
     color: var(--primary-color);
 }
 #showcase::after{
+    z-index: 1;
+    background-color: rgba(0,0,0,0.6);
+    height: 93%;
+    width: 100%;
+    position: absolute;
+    content: '';
+}
+#showcase-mutant::after{
     z-index: 1;
     background-color: rgba(0,0,0,0.6);
     height: 93%;
