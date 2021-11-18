@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Quantico', sans-serif;
+    box-sizing:border-box;
 }
 body{
     font-size: 30px;
@@ -28,9 +29,6 @@ footer{
     height: 25%;
     background-color: var(--primary-color);
     text-align: center;
-    color: var(--secondary-color);
-}
-h1{
     color: var(--secondary-color);
 }
 #showcase{
@@ -56,6 +54,10 @@ h1{
     position: absolute;
     content: '';
 }
+h1, h2{
+    text-align: center;
+    color: var(--secondary-color);
+}
 h1, p, a, div{
     z-index: 2;
 }
@@ -72,6 +74,9 @@ h1, p, a, div{
 li{
     margin-left: 15px;
     margin-right: 15px;
+}
+.center{
+    display: block;
 }
 section{
     display: flex;
@@ -92,6 +97,13 @@ color: var(--secondary-color);
     background-color: var(--secondary-color);
 }
 .green p{
+    color: var(--primary-color);
+}
+.green2{
+    background-color: var(--secondary-color);
+    height: 15em;
+}
+.green2 p{
     color: var(--primary-color);
 }
 .divider{
@@ -146,4 +158,43 @@ flex-direction:column;
     color: var(--secondary-color);
     border-radius: 9px;
     text-decoration: none; 
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 20%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.active{
+  background-color: #717171;
 }
