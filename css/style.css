@@ -205,7 +205,10 @@ flex-direction:column;
 .slideshow-container {
   max-width: 20%;
   position: relative;
-  margin: 10px;
+  margin: auto;
+}
+.marginator{
+    margin:10px;
 }
 
 /* Next & previous buttons */
