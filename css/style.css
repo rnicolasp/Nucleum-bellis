@@ -96,15 +96,14 @@ color: var(--secondary-color);
 .green{
     background-color: var(--secondary-color);
 }
+.green h1{
+    color: var(--primary-color);
+}
 .green p{
     color: var(--primary-color);
 }
 .green2{
-    background-color: var(--secondary-color);
     height: 15em;
-}
-.green2 p{
-    color: var(--primary-color);
 }
 .divider{
     position: relative;
@@ -175,8 +174,7 @@ flex-direction:column;
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
-  color: white;
+  color: var(--secondary-color);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -192,9 +190,29 @@ flex-direction:column;
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(255,255,255,0.8);
 }
 
 .active{
   background-color: #717171;
+}
+.container{
+    align-items: center;
+}
+.centro{
+    margin: 0 auto;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.centro a{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 9px;
+}
+.centro a:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: solid var(--secondary-color)
 }
